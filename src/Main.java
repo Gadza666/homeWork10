@@ -5,18 +5,20 @@ public class Main {
         System.out.println("Hello world!");
 
         System.out.println("Task 1");
-        printIsLeapYear(2000);
+        printIsLeapYear(2003);
 
         System.out.println("Task 2");
         int currentYear = LocalDate.now().getYear();
-        printValidTypeInfo(0, currentYear);
+        printValidTypeInfo(1, 2000);
 
         System.out.println("Task 3");
         calculateDeliveryDays(67);
     }
 
     public static void printIsLeapYear(int year) {
-        if (year > 1584 && (year % 4 == 0 && (year % 100 != 0 || year % 400 == 0))) {
+        if (year < 1584) {
+            System.out.println("Високосный год еще не придумали");
+        } else if (year % 4 == 0 && (year % 100 != 0 || year % 400 == 0)) {
             System.out.println(year + " год — високосный год");
         } else {
             System.out.println(year + " год — невисокосный год");
