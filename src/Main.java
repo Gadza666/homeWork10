@@ -12,7 +12,7 @@ public class Main {
         printValidTypeInfo(1, 2000);
 
         System.out.println("Task 3");
-        System.out.println("Потребуется дней:" + calculateDeliveryDays(55));
+        System.out.println("Потребуется дней:" + calculateDeliveryDays(33));
 
 
     }
